@@ -1,7 +1,19 @@
 {
     "name": "monorepo-example/monorepo",
-    "require": {},
+    "require": {
+        "symfony/finder": "^4.1",
+        "monolog/monolog": "^1.23",
+        "guzzlehttp/guzzle": "^6.3"
+    },
     "require-dev": {
-        "symplify/monorepo-builder": "^5.0"
+        "phpunit/phpunit": "^7.3",
+        "symplify/monorepo-builder": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "MonorepoExample\\Package1\\": "packages/package1/src",
+            "MonorepoExample\\Package2\\": "packages/package2/src",
+            "MonorepoExample\\Package3\\": "packages/package3/src"
+        }
     }
 }
