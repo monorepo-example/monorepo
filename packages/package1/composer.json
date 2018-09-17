@@ -1,6 +1,8 @@
 {
     "name": "monorepo-example/package1",
-    "require": {},
+    "require": {
+        "symfony/finder": "^4.1"
+    },
     "require-dev": {
         "phpunit/phpunit": "^7.3"
     }

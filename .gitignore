@@ -1,2 +1,4 @@
 /vendor
 /composer.lock
+/packages/*/vendor
+/packages/*/composer.lock
