@@ -15,3 +15,8 @@ parameters:
   data_to_append:
     require-dev:
       symplify/monorepo-builder: ^4.7 # モノレポcomposer.jsonを再生成すると消えてしまうため必要
+
+  directories_to_repositories:
+    packages/package1: git@github.com:monorepo-example/package1.git
+    packages/package2: git@github.com:monorepo-example/package2.git
+    packages/package3: git@github.com:monorepo-example/package3.git
