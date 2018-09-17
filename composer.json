@@ -1,0 +1,7 @@
+{
+    "name": "monorepo-example/monorepo",
+    "require": {},
+    "require-dev": {
+        "symplify/monorepo-builder": "^5.0"
+    }
+}
