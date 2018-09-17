@@ -1,0 +1,17 @@
+parameters:
+  # 各パッケージのcomposer.jsonから、モノレポのcomposer.jsonにマージするものを指定する。
+  merge_sections:
+  - require
+  - require-dev
+  - autoload
+  - autoload-dev
+
+  # 各パッケージが配置されるディレクトリを指定する。
+  package_directories:
+  - packages
+
+  # 各パッケージのcomposer.jsonから、モノレポのcomposer.jsonにマージするときに、モノレポの
+  # composer.jsonに追記するものを設定する。
+  data_to_append:
+    require-dev:
+      symplify/monorepo-builder: ^4.7 # モノレポcomposer.jsonを再生成すると消えてしまうため必要
