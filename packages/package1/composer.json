@@ -1,4 +1,7 @@
 {
     "name": "monorepo-example/package1",
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    }
 }
